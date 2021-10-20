@@ -1,0 +1,18 @@
+
+{%  extends 'base.html' %}
+{% block title %} {{ object.EmpName.title }} {% endblock %}
+
+{%  block content %}
+
+    <br>
+    <h1 style="display: inline"></h1><h6 style="display: inline">
+    {{ object.EmpName.title }}</h6><br>
+    Email : {{ object.EmpMail }} <br>
+    <hr>
+    Address : {{ object.Address }}
+    <br><br>
+    Phone   :  {{ object.PhoneNumber }}
+    <br><br>
+    <a href="{% url 'home' %}" class="btn btn-secondary" >Back</a>
+
+{% endblock %}
